@@ -15,6 +15,14 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 1. **Think about how to validate each of your features according to a Definition of Done**
 1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
 
+    -create header, main , footer 
+    -create data.js for people: add name, pronouns, favorite place, hobbies
+    -create h1 in header, in main h1, selector drop down, section, h1, p, span, ul, lix3. footer styling.
+    -link data.js into app.js
+    -create app.js code to make drop down work. 
+    -style bio as desired.
+    -fix bugs
+
 Additional considerations:
 
 -   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
