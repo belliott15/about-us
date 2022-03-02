@@ -1,16 +1,23 @@
 // import functions
+
 import { people } from './data.js';
-console.log(people, 'people');
+
 // grab DOM elements
+
 const selectEL = document.querySelector('.select');
-console.log(selectEL);
 const pronounsEl = document.querySelector('.pronouns');
 const nameEl = document.querySelector('.name');
 const favPlaceEl = document.querySelector('.favPlace');
 const hobbiesEl = document.querySelector('.hobbies');
+const contain = document.querySelector('.contain');
+
 // set event listeners 
+
 selectEL.addEventListener('change', (event) => {
-    console.log('user click');
+    const selected = event.target.value;
+    hobbiesEl.innerHTML = ' ';
+    contain.classList.remove('Elliott', 'Beau');
+    return selected === 'one' ? renderPerson(0) : renderPerson(1);
 });
 
 function renderPerson(index) {
@@ -25,6 +32,7 @@ function renderPerson(index) {
         hobbiesEl.appendChild(li);
     }
 }
+
     // get user input
     // use user input to update state 
     // update DOM to reflect the new state
