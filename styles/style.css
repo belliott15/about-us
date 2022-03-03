@@ -1,13 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap');
 body {
     /* feel free to update these css variables for a quick theme */
 
     --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white;
+    --color2: #ade8f4;
+    --color3: #264653;
+    --color4: #0077b6;
+    --color5: #0096c7;
 
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
 
@@ -29,7 +30,7 @@ body {
     --footer-height: 30px;
 
     font-family: 'Hubballi', cursive;;
-    background-color: var(--color2);
+    background-color: #2a9d8f;
 }
 
 main {
@@ -60,6 +61,18 @@ header {
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    color: white;
+    border-radius: 10px;
+}
+
+h1{
+    padding-right: 20px;
+    color: white;
+}
+
+main > h1 {
+    font-family: Smooch Sans, sans-serif;
+    font-size: 4em;
 }
 
 h2 {
@@ -87,4 +100,51 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.Elliott{ 
+    background-color:bisque;
+    border-radius: 25px;
+    padding: 10px;
+    
+
+}
+
+.Elliott > ul {
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.Elliott > h4 {
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.Elliott > h6 {
+    font-style: italic;
+}
+
+.Beau {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.Beau > h4 {
+    border: rgb(87, 87, 138) solid 2px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.Beau > ul {
+    border: #0077b6 solid 2px;
+    border-radius: 10px;
+    padding: 20px
+}
+
+.Beau > h5 {
+    font-size: 17px;
+    font-style: italic;
+    letter-spacing: 1px;
 }
